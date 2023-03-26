@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --linen:#faf0e5;
+    --burleywood:#DEB887;
+    --text:#fbfbfb;
+}
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');*/
+body{
+    font-family: 'Italiana', serif;
+    background: linear-gradient(90deg, var(--linen), var(--burleywood));
+    color: var(--text);
+    text-shadow: 1px 1px 1px #333;
+    overflow-wrap: break-word;
+}
+  
+/*container*/
+
+.container-fluid{
+    /*display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 1px;*/
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 10px 10px 25px 2px #111;
+    animation: fadeIn 4s ease-out;
+}
+@keyframes fadeIn {
+    0% {
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.05);
+    }
+    100%{
+    }
+}
+p{
+    font-size:20px;
+    font-weight: bold;
+    text-align: left;
+}
+a{
+    color: grey;
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    color: black;
+}
